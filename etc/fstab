@@ -7,15 +7,15 @@
 # LABEL=Arch          	/         	f2fs      	rw,noatime,lazytime,background_gc=on,no_heap,inline_xattr,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6	0 0
 
 # /dev/sda1 UUID=CB16-38A0
-LABEL=EFI           	/boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
+LABEL=SBOOT           	/boot     	vfat      	rw,noatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
 
 # /dev/sda6 UUID=01D37D3E712B3DE0
-LABEL=D             	/mnt/d    	ntfs      	rw,nosuid,nodev,noatime,user_id=0,group_id=0,allow_other,blksize=4096,nofail	0 0
+LABEL=D             	/media/d    ntfs      	rw,nosuid,nodev,noatime,user_id=0,group_id=0,allow_other,blksize=4096,nofail	0 0
 
 # /dev/sdb12 UUID=01D28536070A2800
-LABEL=B             	/mnt/b    	ntfs      	rw,nosuid,nodev,noatime,user_id=0,group_id=0,allow_other,blksize=4096,nofail,noauto	0 0
+LABEL=B             	/media/b    ntfs      	rw,nosuid,nodev,noatime,user_id=0,group_id=0,allow_other,blksize=4096,nofail,noauto	0 0
 
 # /dev/sdb4 UUID=E4180B99180B69BE
-LABEL=W             	/mnt/w    	ntfs      	rw,nosuid,nodev,noatime,user_id=0,group_id=0,allow_other,blksize=4096,nofail	0 0
+LABEL=W             	/media/w    ntfs      	rw,nosuid,nodev,noatime,user_id=0,group_id=0,allow_other,blksize=4096,nofail	0 0
 
-LABEL=Swap		none		swap		defaults								0 0
+LABEL=SWAP				none		swap		defaults	0 0

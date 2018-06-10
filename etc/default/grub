@@ -1,14 +1,19 @@
+# GRUB boot loader configuration
+
 GRUB_DEFAULT=0
-GRUB_TIMEOUT=2
-GRUB_DISTRIBUTOR="Arch"
-GRUB_CMDLINE_LINUX_DEFAULT=""
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR="Artix"
+GRUB_CMDLINE_LINUX_DEFAULT="quiet"
 GRUB_CMDLINE_LINUX="rw quiet vga=current nowatchdog net.ifnames=0 nmi.watchdog=0 resume=LABEL=Swap "
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
 
+# Uncomment to enable booting from LUKS encrypted devices
+#GRUB_ENABLE_CRYPTODISK=y
+
 # Uncomment to enable Hidden Menu, and optionally hide the timeout count
-#GRUB_HIDDEN_TIMEOUT=5
+GRUB_HIDDEN_TIMEOUT=2
 #GRUB_HIDDEN_TIMEOUT_QUIET=true
 
 # Uncomment to use basic console
@@ -44,4 +49,6 @@ GRUB_BACKGROUND="/boot/grub/boot-bg.jpg"
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
 
+# Uncomment to make GRUB remember the last selection. This requires to
+# set 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"
