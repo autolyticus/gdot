@@ -27,10 +27,10 @@ GRUB_GFXPAYLOAD_LINUX=keep
 
 # Uncomment if you want GRUB to pass to the Linux kernel the old parameter
 # format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx"
-#GRUB_DISABLE_LINUX_UUID=true
+GRUB_DISABLE_LINUX_UUID=false
 
 # Uncomment to disable generation of recovery mode menu entries
-GRUB_DISABLE_RECOVERY=true
+GRUB_DISABLE_RECOVERY=false
 
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper
 # modes only.  Entries specified as foreground/background.
