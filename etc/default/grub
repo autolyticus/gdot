@@ -1,8 +1,10 @@
+# GRUB boot loader configuration
+
 GRUB_DEFAULT=0
 GRUB_TIMEOUT=0
 GRUB_DISTRIBUTOR="Arch"
 GRUB_CMDLINE_LINUX_DEFAULT=""
-GRUB_CMDLINE_LINUX="rw quiet vga=current nowatchdog net.ifnames=0 nmi.watchdog=0 resume=LABEL=SWAP "
+GRUB_CMDLINE_LINUX="rw quiet vga=current nowatchdog net.ifnames=0 nmi.watchdog=0 resume=LABEL=Swap "
 
 # Preload both GPT and MBR modules so that they are not missed
 GRUB_PRELOAD_MODULES="part_gpt part_msdos"
@@ -27,10 +29,10 @@ GRUB_GFXPAYLOAD_LINUX=keep
 
 # Uncomment if you want GRUB to pass to the Linux kernel the old parameter
 # format "root=/dev/xxx" instead of "root=/dev/disk/by-uuid/xxx"
-GRUB_DISABLE_LINUX_UUID=false
+#GRUB_DISABLE_LINUX_UUID=true
 
 # Uncomment to disable generation of recovery mode menu entries
-GRUB_DISABLE_RECOVERY=false
+GRUB_DISABLE_RECOVERY=true
 
 # Uncomment and set to the desired menu colors.  Used by normal and wallpaper
 # modes only.  Entries specified as foreground/background.
@@ -44,4 +46,6 @@ GRUB_BACKGROUND="/boot/grub/boot-bg.jpg"
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
 
+# Uncomment to make GRUB remember the last selection. This requires to
+# set 'GRUB_DEFAULT=saved' above.
 #GRUB_SAVEDEFAULT="true"

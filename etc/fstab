@@ -3,8 +3,8 @@
 
 # <file system> <dir> <type> <options> <dump> <pass>
 
-# /dev/sda3 UUID=2949d85b-ef1e-4eae-be8d-d7f43d37f82e
-LABEL=SROOT         	/         	f2fs      	rw,relatime,lazytime,background_gc=on,no_heap,inline_xattr,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6,alloc_mode=default,fsync_mode=posix	0 0
+# /dev/sda3 UUID=858184b6-0325-4615-99d1-7b5d0da5add9
+# LABEL=Arch          	/         	f2fs      	rw,noatime,lazytime,background_gc=on,no_heap,inline_xattr,inline_data,inline_dentry,flush_merge,extent_cache,mode=adaptive,active_logs=6	0 0
 
 # /dev/sda1 UUID=3CC3-3920
 LABEL=SBOOT         	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=iso8859-1,shortname=mixed,utf8,errors=remount-ro	0 2
