@@ -12,11 +12,11 @@
 ## 中国科学技术大学 (ipv4, ipv6, http, https)
 #Server = https://mirrors.ustc.edu.cn/archlinuxcn/$arch
 
-## 清华大学 (ipv4, ipv6, http, https)
-Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
-
 ## xTom (Hong Kong) (ipv4, ipv6, http, https)
 Server = https://mirror.xtom.com.hk/archlinuxcn/$arch
+
+## 清华大学 (ipv4, ipv6, http, https)
+Server = https://mirrors.tuna.tsinghua.edu.cn/archlinuxcn/$arch
 
 ## 上海大学开源镜像站 (ipv4, ipv6, https)
 #Server = https://mirrors.shuosc.org/archlinuxcn/$arch
